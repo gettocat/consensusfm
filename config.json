@@ -1,0 +1,29 @@
+{
+    "network": "",
+    "main": {
+        "version": 1,
+        "logs": {
+            "modules": [
+                "config",
+                "crypto",
+                "tools",
+                "db",
+                "storage",
+                "rpc",
+                "index",
+                "app",
+                "orwell",
+                "wallet",
+                "networkhandler",
+                "dapps",
+                "ui",
+                "network",
+                "dApps",
+                "handler",
+                "error",
+                "utxo",
+                "orwell/dbTransaction"
+            ]
+        }
+    }
+}

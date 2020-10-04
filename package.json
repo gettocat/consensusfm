@@ -1,0 +1,48 @@
+{
+    "name": "consensusfm",
+    "version": "0.0.1",
+    "description": "Direct democracy framework",
+    "main": "index.js",
+    "repository": "https://github.com/gettocat/consensusfm",
+    "homepage": "https://github.com/gettocat/consensusfm",
+    "keywords": [
+        "blockchain",
+        "p2p",
+        "democracy",
+        "directdemocracy"
+    ],
+    "dependencies": {
+        "base-58": "^0.0.1",
+        "bitpony": "^0.0.1",
+        "bloom-filter": "^0.2.0",
+        "bn.js": "^4.11.8",
+        "date-format": "^3.0.0",
+        "ecdsa-csr": "^1.1.1",
+        "elliptic": "^6.5.1",
+        "express": "^4.17.1",
+        "hash.js": "^1.1.3",
+        "http-errors": "^1.7.3",
+        "int64-buffer": "^0.1.9",
+        "key-encoder": "^2.0.3",
+        "merkle-tools": "^1.4.0",
+        "minimist": "^1.2.0",
+        "morgan": "^1.10.0",
+        "n64": "^0.1.2",
+        "mixin-deep": "^2.0.1",
+        "mysql2": "^2.2.5",
+        "sequelize": "^6.3.5",
+        "lokijs": "^1.5.11",
+        "bitowl": "^0.0.2"
+    },
+    "author": {
+        "name": "Gettocat <gettocat@github.com>",
+        "email": "anoncat70@gmail.com"
+    },
+    "license": "MIT",
+    "scripts": {
+        "restart": "supervisorctl restart cfm:* && echo 'done\n'",
+        "upd": "git pull -v && npm i && supervisorctl restart cfm:* && echo 'done\n'",
+        "main": "node ./mainnet.js",
+        "test": "node ./testnet.js"
+    }
+}
